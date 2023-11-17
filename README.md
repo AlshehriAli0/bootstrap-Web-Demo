@@ -12,18 +12,6 @@ Features
     Bootstrap Components: Utilizes various Bootstrap v5 components such as navigation bar, carousel, cards, and more.
     Modern HTML5: Incorporates HTML5 elements for improved semantic structure and compatibility.
 
-Getting Started
-
-To explore the project locally, follow these steps:
-
-    Clone the repository:
-
-    bash
-
-    git clone https://github.com/alshehriali0/bootstrap-Web-Demo.git
-
-    Open the index.html file in your preferred web browser.
-
 
 Contributing
 
