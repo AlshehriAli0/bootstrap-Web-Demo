@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 #footer {
@@ -20,9 +21,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -72,13 +75,74 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .icon-square {
   width: 3rem;
   height: 3rem;
   border-radius: 0.75rem;
 }
 
+.dark-mode a {
+  color: #ffffff !important;
+  transition: color 0.5s ease !important;
+}
+
+.card {
+  transition: background-color 0.5s ease;
+}
+
 .profile-img {
   height: 100px;
   border-radius: 50%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease-out;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #2b2b2b;
+}
+
+#darkModeButton{
+  background: unset;
+  border: unset;
+  opacity: 40%;
+  cursor: pointer;
+  margin-left: auto;
+
+
+}
+
+#darkModeButton:active {
+  background: unset;
+  border: unset;
+  opacity: 40%;
+  cursor: pointer;
+  margin-left: auto;
+
+}
+
+#darkModeButton2 {
+  background: unset;
+  border: unset;
+  opacity: 40%;
+  cursor: pointer;
+  margin-left: auto;
+
+}
+
+#darkModeButton2:active {
+  background: unset;
+  border: unset;
+  opacity: 40%;
+  cursor: pointer;
+  margin-left: auto;
+
 }

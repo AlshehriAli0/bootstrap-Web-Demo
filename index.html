@@ -16,9 +16,12 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-lght">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-lght">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">FireFit</a>
+<button id="darkModeButton" type="button" class=" btn btn-lg btn-dark d-lg-none">
+  <img src="/resources/images/night-mode.png" height="25" width="25" alt="">
+</button>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,16 +31,19 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+        
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link active" aria-current="page" href="#title">Home</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#price">Pricing</a>
           </div>
-        </div>
+        </div><button id="darkModeButton2" type="button" class=" btn btn-lg btn-dark d-none d-lg-block">
+          <img src="/resources/images/night-mode.png" height="25" width="25" alt="">
+        </button>
       </div>
     </nav>
     <!-- Title -->
@@ -52,6 +58,7 @@
                   class="bn46"
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                   alt="bn45"
+                  
               /></a>
 
               <a href="/" tabindex="0"
@@ -161,7 +168,7 @@
     <section id="pricing">
       <!-- Pricing -->
       <hr />
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-center pt-5">
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center pt-5" id="price">
         <h1 class="display-4 fw-normal">
           A Plan for tailored for your body Needs
         </h1>
@@ -210,6 +217,10 @@
             </div>
           </div>
         </div>
+        <style>
+        
+        </style>
+
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm border-dark">
             <div class="card-header py-3 text-bg-dark border-dark">
@@ -271,28 +282,7 @@
             </ul>
           </div>
 
-          <div class="col-sm col-12 pt-5">
-            <h5>Section</h5>
-            <div class="cw">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Home</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Features</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">Pricing</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link cw p-0 text-muted">FAQs</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-muted">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          
         </footer>
       </div>
     </section>
@@ -302,5 +292,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js"></script>
   </body>
 </html>
